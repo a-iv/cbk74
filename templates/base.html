@@ -7,7 +7,6 @@
     <meta name="description" content="{% block seo_description %}{% endblock %}" />
     <title>{% block seo_title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" media="screen" href="/media/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="/media/css/pagenavi-css.css" />
     <link rel="shortcut icon" href="/favicon.ico" />
     {% chunk "end-of-head" %}
 </head>
@@ -24,10 +23,10 @@
         </div>
         <div class="shadow-right"></div>
             <div class="searchbox">
-            <form id="searchform" action="http://www.infocreek.org/" method="get">
-                <div class="label">Find Entries</div>
+            <form id="searchform" action="#" method="get">
+                <div class="label">Поиск по сайту:</div>
                 <div class="search"><input type="text" value="" name="s" id="s" /></div>
-                <div><input type="submit" id="searchsubmit" value="GO" /></div>
+                <div><input type="submit" id="searchsubmit" value="»" /></div>
             </form>
         </div>
     </div>
@@ -49,16 +48,12 @@
             </div></div></div></div>
         </div>
         <div id="sidebars">
-            <div id="sidebar-left">
-                <div id="panel-1" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
-                    {% chunk "panel-1" %}
-                </div></div></div></div></div></div></div></div>
-            </div>
-            <div id="sidebar-right">
-                <div id="panel-2" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
-                    {% chunk "panel-2" %}
-                </div></div></div></div></div></div></div></div>
-            </div>
+            <div id="panel-1" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
+                {% chunk "panel-1" %}
+            </div></div></div></div></div></div></div></div>
+            <div id="panel-2" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
+                {% chunk "panel-2" %}
+            </div></div></div></div></div></div></div></div>
             <div class="clear"></div>
         </div>
         
