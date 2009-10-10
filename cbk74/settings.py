@@ -72,6 +72,7 @@ INSTALLED_APPS = (
     'trustedhtml',
     'modelurl',
     'cbk74.custom_pages',
+    'menuproxy',
 )
 
 TEMPLATE_LOADERS = (
@@ -183,5 +184,14 @@ MODELURL_VIEWS = [
     {
         'view': 'pages.views.details',
         'context': 'current_page',
+    },
+]
+
+# MenuProxy settings
+MENU_PROXY_SETTINGS = [
+    {
+        'method': 'root',
+        'model': 'pages.models.Page',
+        'proxy': 'menuproxy.proxies.PagesMenuProxy',
     },
 ]
