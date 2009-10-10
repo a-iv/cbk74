@@ -12,92 +12,59 @@
     {% chunk "end-of-head" %}
 </head>
 <body>
-<div class="left-bg"><div class="script"></div></div>
-<div class="right-bg"></div>
-<div id="head">
-    <div class="crack"></div>
-    <div class="header" id="top">
-        <div id="menu">
-            {% show_main_menu current_page %}
-        </div>
-        <div class="logo">{% chunk "logo" %}</div>
-    </div>
-    <div class="shadow-right"></div>
-        <div class="searchbox">
-        <form id="searchform" action="http://www.infocreek.org/" method="get">
-            <div class="label">Find Entries</div>
-            <div class="search"><input type="text" value="" name="s" id="s" /></div>
-            <div><input type="submit" id="searchsubmit" value="GO" /></div>
-        </form>
-    </div>
-</div>
-
-<div id="content">
-    <div id="main">
-        <div class="content"><div class="cont-r"><div class="cont-l"><div class="cont-bot">
-            <div class="grad-hack"><div class="begin"></div>
-                <div class="post1">
-                    <div class="title">
-                        <h1>{% block title %}{% endblock %}</h1>
-                    </div>
-                    <div class="entry font-resize">{% block content %}{% endblock %}</div>
-                    {% comment%}
-                    <div class="postmetadata"><div class="comm-num-left"><a href="http://www.infocreek.org/?p=34#comments" title="Comment on vel quot malorum no! Has eu mollis iracundia.">4 Comments</a></div><div class="clear"></div></div>
-                    {% endcomment%}
-                </div>
-                <div class="clear"></div>
-                <div class="backtotop"><a class="scroll" href="#top">Ввех</a></div>
+    <div class="left-bg"><div class="script"></div></div>
+    <div class="right-bg"></div>
+    <div id="head">
+        <div class="crack"></div>
+        <div class="header" id="top">
+            <div id="menu">
+                {% show_main_menu current_page %}
             </div>
-        </div></div></div></div>
-    </div>
-    
-        <div id="sidebars">
-
-        <div id="sidebar-left">
-    <div id="categories-1" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt"><h2>Categories</h2>      <ul>
-
-    <li class="cat-item cat-item-1"><a href="http://www.infocreek.org/?cat=1" title="View all posts filed under Category 1">Category 1</a>
-</li>
-    <li class="cat-item cat-item-5"><a href="http://www.infocreek.org/?cat=5" title="View all posts filed under Category 2">Category 2</a>
-</li>
-    <li class="cat-item cat-item-16"><a href="http://www.infocreek.org/?cat=16" title="View all posts filed under Child">Child</a>
-</li>
-    <li class="cat-item cat-item-13"><a href="http://www.infocreek.org/?cat=13" title="View all posts filed under Lorem Ipsum">Lorem Ipsum</a>
-</li>
-    <li class="cat-item cat-item-6"><a href="http://www.infocreek.org/?cat=6" title="View all posts filed under Overtime">Overtime</a>
-
-</li>
-    <li class="cat-item cat-item-14"><a href="http://www.infocreek.org/?cat=14" title="View all posts filed under Puto">Puto</a>
-</li>
-    <li class="cat-item cat-item-7"><a href="http://www.infocreek.org/?cat=7" title="View all posts filed under Sed congue">Sed congue</a>
-</li>
-    <li class="cat-item cat-item-3"><a href="http://www.infocreek.org/?cat=3" title="View all posts filed under Sub Category A">Sub Category A</a>
-</li>
-    <li class="cat-item cat-item-4"><a href="http://www.infocreek.org/?cat=4" title="View all posts filed under Sub Category B">Sub Category B</a>
-</li>
-
-    <li class="cat-item cat-item-15"><a href="http://www.infocreek.org/?cat=15" title="View all posts filed under Uncategorized">Uncategorized</a>
-</li>
-        </ul>
-</div></div></div></div></div></div></div></div>
-</div>
-        <div id="sidebar-right">
-            <div id="recent-posts-2" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">     <h2>Recent Posts</h2>       <ul>
-                <li><a href="http://www.infocreek.org/?p=34" title="vel quot malorum no! Has eu mollis iracundia.">vel quot malorum no! Has eu mollis iracundia. </a></li>
-                <li><a href="http://www.infocreek.org/?p=35" title="Nulla in tellus eget odio sagittis blandit. Maecenas at">Nulla in tellus eget odio sagittis blandit. Maecenas at </a></li>
-                <li><a href="http://www.infocreek.org/?p=7" title="Heading sample">Heading sample </a></li>
-                <li><a href="http://www.infocreek.org/?p=6" title="A paginated post">A paginated post </a></li>
-
-                <li><a href="http://www.infocreek.org/?p=1" title="Hello world!">Hello world! </a></li>
-                </ul>
-        </div></div></div></div></div></div></div></div>
+            <div class="logo">{% chunk "logo" %}</div>
         </div>
-        <div class="clear"></div>
+        <div class="shadow-right"></div>
+            <div class="searchbox">
+            <form id="searchform" action="http://www.infocreek.org/" method="get">
+                <div class="label">Find Entries</div>
+                <div class="search"><input type="text" value="" name="s" id="s" /></div>
+                <div><input type="submit" id="searchsubmit" value="GO" /></div>
+            </form>
+        </div>
     </div>
+    <div id="content">
+        <div id="main">
+            <div class="content"><div class="cont-r"><div class="cont-l"><div class="cont-bot">
+                <div class="grad-hack"><div class="begin"></div>
+                    <div class="post1">
+                        <div class="title">
+                            <h1>{% block title %}{% endblock %}</h1>
+                        </div>
+                        <div class="entry font-resize">
+                            {% block content %}{% endblock %}
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="backtotop"><a class="scroll" href="#top">Ввех</a></div>
+                </div>
+            </div></div></div></div>
+        </div>
+        <div id="sidebars">
+            <div id="sidebar-left">
+                <div id="panel-1" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
+                    {% chunk "panel-1" %}
+                </div></div></div></div></div></div></div></div>
+            </div>
+            <div id="sidebar-right">
+                <div id="panel-2" class="sb-bot"><div class="sb-top"><div class="sb-right"><div class="sb-left"><div class="sb-rb"><div class="sb-lb"><div class="sb-rt"><div class="sb-lt">
+                    {% chunk "panel-2" %}
+                </div></div></div></div></div></div></div></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="clear"></div>
     
-    <div class="clear"></div>
-
-</div>
+    </div>
     <div id="footer">
         <div class="copy">
             <div id="copyright">{% chunk "copyright" %}</div>
