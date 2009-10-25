@@ -1,4 +1,6 @@
 @import url('base.css');
 
 body {
+    width: 627px;
+    text-align: left;
 }
