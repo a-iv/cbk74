@@ -116,7 +116,7 @@ CONFIG_APP_MEDIA = {
 PAGE_TAGGING = False
 PAGE_PERMISSION = False
 PAGE_TINYMCE = True
-PAGE_HIDE_ROOT_SLUG = True
+#PAGE_HIDE_ROOT_SLUG = True
 PAGE_LANGUAGES = (
     ('ru', gettext_noop('Russian')),
     ('en', gettext_noop('English')),
