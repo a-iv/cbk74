@@ -202,6 +202,3 @@ MENU_PROXY_SETTINGS = [
         'proxy': 'menuproxy.proxies.PagesMenuProxy',
     },
 ]
-
-# narod.yandex.ru :(
-DEFAULT_CHARSET = 'cp1251'
